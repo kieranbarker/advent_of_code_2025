@@ -16,7 +16,7 @@ fresh_ingredients = [
 
 fresh_ingredients.sort(key=lambda ingredient_range: ingredient_range[0])
 
-merged_ranges = fresh_ingredients[0:1]
+merged_ranges = fresh_ingredients[:1]
 
 for ingredient_range in fresh_ingredients[1:]:
     if merged_ranges[-1][-1] >= ingredient_range[0]:
